@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Login Form</title>
+</head>
+
+<body>
+    <form action="" id="myForm" onsubmit="myfun()">
+        <div class="login_form">
+                  <div class="avatar1-container">
+                    <label for="avatarInput" class="avatar1">
+                      <img class="avatar" src="./pic/avatar.png" alt="User" width="50%" title="Uplode Your Picture">
+                    </label>
+                    <input type="file" id="avatarInput" style="display: none;" onchange="handleImageUpload(event)" required accept="png,jpg">
+                  </div>
+                  <div class="ip">
+                      
+                <label for="email1">
+                <img class="img" src="./pic/user.png" alt="User" width="5%">
+                </label>
+                <input class="same" type="email" id="email1" required placeholder="Email" autofocus
+                    title="Enter The Correct Email"><br>
+
+            </div>
+
+            <div class="ip">
+                
+                <label for="password">
+                <img class="img" src="./pic/padlock.png" alt="User" width="5%">
+                </label>
+                <input class="same" type="password" id="password" required placeholder="Enter Password"
+                    title="Enter The Correct Password"><br>
+                <br>
+                <div class="extra">
+                    <input type="checkbox" name="checkbox" id="cb" value="Remember me">
+                    <label class="lcb" for="cb">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn"><input type="submit" value="Submit"></div>
+    </form>
+
+    <script>
+        function handleImageUpload(event) {
+            const selectedImage = document.querySelector(".avatar");
+            const file = event.target.files[0];
+
+            if (file) {
+                selectedImage.src = URL.createObjectURL(file);
+            }
+        }
+
+        function myfun(){
+            var email = document.getElementById('email1').value;
+            var pass = document.getElementById('password').value;
+            var selectedImage = avatarInput.files[0];
+            var imageName = selectedImage ? selectedImage.name : 'No image selected';
+
+            alert(`Email: ${email}\nPassword: ${pass}\nImage Name: ${imageName}`);
+
+            myform.reset();
+
+        }
+    </script>
+
+</body>
+
+</html>
+

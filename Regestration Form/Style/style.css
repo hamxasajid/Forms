@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    /* Set to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #ffe4e1, #FFBFB8); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5rem;
+    font-family: poppins;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    /* margin: 0 50px; */
+}
+
+form:hover{
+    box-shadow: 0px 5px 13px 0px aliceblue;
+    transition: 0.7s;
+}
+
+.same {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 1rem;
+    font-family: poppins;
+    color: aliceblue;
+    cursor: pointer;
+    padding-left: 45px;
+}
+
+.ip{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.ip:hover {
+    opacity: 1;
+    transition: 0.7s;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 13px 0px aliceblue;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+input[type="submit"] {
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    color: black;
+    cursor: pointer;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-family: poppins;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(228, 82, 126, 0.829);
+    transform: rotate(0deg) skew(0deg) translate(0, -2px);
+    color: aliceblue;
+    border: none;
+}
+
+
+img{
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa{
+    font-size: 1rem;
+    color: aliceblue;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    border: 2px solid aliceblue;
+    border-radius: 25px;
+    padding: 11px;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+input[type="file"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none; 
+}
+
+
+
+

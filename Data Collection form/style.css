@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./pic/b1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_form {
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 13px 0px black;
+    z-index: 1;
+}
+
+.login_form:hover{
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+.same {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    background: rgba(66, 69, 230, 0.596);
+    font-size: 1rem;
+    font-family: poppins;
+    color: aliceblue;
+    cursor: pointer;
+    padding-left: 45px;
+}
+
+.ip {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+.img {
+    background-color: rgb(2, 2, 63);
+    color: aliceblue;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 2px;
+
+    padding: 12px;
+}
+
+.avatar {
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    padding: 30px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+    background-color: rgb(2, 2, 63);
+}
+
+input[type="submit"] {
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    color: black;
+    cursor: pointer;
+    width: 80%;
+    padding: 15px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-family: poppins;
+    /* margin-top: 100px; */
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(2, 2, 63);
+    color: aliceblue;
+    transition: 0.7s;
+    border: none;
+}
+
+.extra {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: rgb(2, 2, 63);
+}
+
+.lcb {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(2, 2, 63);
+}
