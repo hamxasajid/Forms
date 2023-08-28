@@ -99,7 +99,7 @@ input[type="submit"]:hover{
 .extra {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgb(2, 2, 63);
 }
 
