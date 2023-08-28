@@ -92,7 +92,7 @@ input[type="submit"] {
 input[type="submit"]:hover{
     background-color: rgb(2, 2, 63);
     color: aliceblue;
-    transition: 0.7s;
+    transition: 0.5s;
     border: none;
 }
 
